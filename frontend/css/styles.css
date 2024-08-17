@@ -1,0 +1,334 @@
+/******************quick guide*******************************
+line 1   --> for all style + index page style
+line 190 --> login page style
+line 267 --> signup page style
+line 300 --> profile page styel
+/************************************************************
+
+
+
+/****************************main style*********************/
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f7f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, .active {
+    background-color: #45a049;
+}
+
+/*************** Main Content ***************/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    padding: 2rem;
+    margin-top: 60px; /* To prevent overlap with the fixed header */
+}
+
+
+/********************Section Styles*******************/
+section {
+    width: 100%; /* Full width */
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+/* Hero Section */
+#hero {
+    background-color: #f4f4f4;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Featured Courses Section */
+#featured-courses {
+    background-color: #fff;
+}
+
+#featured-courses h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.course-card {
+    width: 30%;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+
+.course-card h3 {
+    margin: 0.5rem;
+}
+
+
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f9f9f9;
+}
+
+#testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.testimonial {
+    width: 45%;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.testimonial img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimonial blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
+
+/* Call to Action Section */
+#cta {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+#cta h2 {
+    margin-bottom: 1rem;
+}
+
+#cta p {
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+/**********login page styles****************/
+#login {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="email"], input[type="password"]{
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* a:hover {
+    text-decoration: underline;
+} */
+
+
+
+
+/***********signup page style******************/
+#signup{
+    max-width: 400px;
+    padding: 2rem;
+    margin-right: auto;
+    margin-left:auto ;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#name {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#name:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+
+
+
+/***************profile page style*****************/
+#profile{
+    max-width: 400px;
+    padding: 2rem;
+    margin-right: auto;
+    margin-left:auto ;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.btn{
+    text-decoration: none;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
