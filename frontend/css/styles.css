@@ -131,7 +131,7 @@ section {
 
 .course-card img {
     width: 100%;
-    height: auto;
+    height: 60%;
 }
 
 .course-card h3 {
@@ -224,7 +224,7 @@ label {
     text-align: left;
 }
 
-input[type="email"], input[type="password"]{
+input[type="email"], input[type="password"], #title, #message{
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1rem;
@@ -236,7 +236,7 @@ input[type="email"], input[type="password"]{
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input[type="email"]:focus, input[type="password"]:focus {
+input[type="email"]:focus, input[type="password"]:focus, #title:focus, #message:focus {
     border-color: #4CAF50;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
 }
@@ -332,3 +332,40 @@ a {
     transition: background-color 0.3s;
     
 }
+
+
+/**************message us styles****************************/
+#message-us {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#message-us h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#message-us p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+footer {
+    background-color: #f8f9fa; 
+    color: #343a40; 
+    text-align: center; 
+    padding: 20px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    border-top: 1px solid #e9ecef; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px; }
