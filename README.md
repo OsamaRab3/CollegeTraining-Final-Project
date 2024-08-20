@@ -48,11 +48,13 @@ The **Online Learning Platform** is designed to provide a seamless and engaging 
 4. Set Up the Database:
    Import the provided SQL file into your MySQL server.
    Configure the database connection in the config.js file.
-5. Run the Application:
+   
+6. Run the Application:
     ```bash
     npm start
-6. Access the Platform:
+7. Access the Platform:
    Open your web browser and navigate to http://localhost:3000.
+
 
 👥 Team Contributions
 Backend Development: [Your Name] - Developed the server-side using Node.js and Express, ensuring efficient and secure application functionality.
@@ -64,19 +66,20 @@ Database Management: Ebrahim Ayman - Implemented a robust MySQL data structure, 
 Here are some screenshots from the platform:
 
 Home Page
-
+![home](image/home.png)
 
 User Authentication
-
-
+![signup](image/signup.png)
+![login](image/login.png)
 
 User Profiles
-
+![profile](image/profile.png)
 
 Course Catalog
-
+![course](image/course.png)
 
 Support Channel
+![message](image/message.png)
 
 
 🔗 Links
