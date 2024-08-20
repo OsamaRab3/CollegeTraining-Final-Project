@@ -87,7 +87,7 @@ Support Channel  <br/>
 
 <br/>
 🔗 Links
-Project Repository: ![Project Repository Link](https://github.com/OsamaRab3/CollegeTraining-Final-Project)
+Project Repository: ![](https://github.com/OsamaRab3/CollegeTraining-Final-Project)
 
 <br/>
 <br/>
