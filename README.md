@@ -10,7 +10,7 @@ The **Online Learning Platform** is designed to provide a seamless and engaging 
 
 ## 🛠️ Key Technologies
 
-- **Backend:** Node.js, Express
+- **Backend:** Node.js, Express (with Middleware)
 - **Frontend:** HTML, CSS, JavaScript
 - **Database:** MySQL
 
@@ -38,7 +38,7 @@ The **Online Learning Platform** is designed to provide a seamless and engaging 
 
 1. **Clone the Repository:**
    ```bash
-   gh repo clone OsamaRab3/CollegeTraining-Final-Project
+   git clone https://github.com/OsamaRab3/CollegeTraining-Final-Project.git
 2. Navigate to the Project Directory:
    ```bash
    cd CollegeTraining-Final-Project
@@ -53,54 +53,50 @@ The **Online Learning Platform** is designed to provide a seamless and engaging 
     ```bash
     npm start
 7. Access the Platform:
-   Open your web browser and navigate to http://localhost:3000.
+   Open your web browser and navigate to http://localhost:5000.
 
 
-<br/>
-<br/>
-👥 Team Contributions
-Backend Development: ![Osama Rabea](https://github.com/OsamaRab3) - Developed the server-side using Node.js and Express, ensuring efficient and secure application functionality.
-Frontend Development: ![Ahmed Gamal](https://github.com/Ahmed-Gamal-0) - Designed a responsive and engaging user interface, prioritizing ease of use and accessibility.
-Database Management: ![Ebrahim Ayman](https://github.com/HemaX10)  - Implemented a robust MySQL data structure, ensuring data integrity and optimized performance.
 
-<br/>
-<br/>
-<br/>
+## 👥 Team Contributions
+
+### Backend Development
+[Osama Rabea](https://github.com/OsamaRab3)  
+- Developed the server-side using Node.js and Express, ensuring efficient and secure application functionality.
+
+### Frontend Development
+[Ahmed Gamal](https://github.com/Ahmed-Gamal-0)  
+- Designed a responsive and engaging user interface, prioritizing ease of use and accessibility.
+
+### Database Management
+[Ebrahim Ayman](https://github.com/HemaX10)  
+- Implemented a robust MySQL data structure, ensuring data integrity and optimized performance.
+
+
 📷 Screenshots
 Here are some screenshots from the platform:
 
-Home Page <br/>
-<img src="image/home.png" alt="Home Page Image" width="70%" /> <br/>
+**Home Page**
+<img src="image/home.png" alt="Home Page Image"  /> 
 
-User Authentication  <br/>
-<img src="image/signup.png" alt="Sign Up Page Image" width="70%" /> <br/>
-<img src="image/login.png" alt="Login Page Image" width="70%" /> <br/>
+**Course Catalog**  
+<img src="image/course.png" alt="Profile Page Image" /> 
 
-User Profiles  <br/>
-<img src="image/profile.png" alt="Profile Page Image" width="70%" /> <br/>
+**User Authentication**  
+   - **Sgin Up Page** 
+<img src="image/signup.png" alt="Sign Up Page Image" />
 
-Course Catalog  <br/>
-<img src="image/course.png" alt="Profile Page Image" width="70%" />  <br/>
+   - **Login Page**
+<img src="image/login.png" alt="Login Page Image" /> 
 
-Support Channel  <br/>
-<img src="image/message.png" alt="Message Page Image" width="70%" />  <br/>
+**User Profiles**  
+<img src="image/profile.png" alt="Profile Page Image" /> 
 
-<br/>
+**Support Channel** 
+<img src="image/message.png" alt="Message Page Image" /> 
+
+
 🔗 Links
-Project Repository: ![](https://github.com/OsamaRab3/CollegeTraining-Final-Project)
-
-<br/>
-<br/>
-<br/>
-
-<br/>
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-
-
-
+Project Repository: [CollegeTraining-Final-Project](https://github.com/OsamaRab3/CollegeTraining-Final-Project)
 
 
 
