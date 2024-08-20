@@ -38,7 +38,7 @@ The **Online Learning Platform** is designed to provide a seamless and engaging 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/online-learning-platform.git
+   gh repo clone OsamaRab3/CollegeTraining-Final-Project
 2. Navigate to the Project Directory:
    ```bash
    cd online-learning-platform
