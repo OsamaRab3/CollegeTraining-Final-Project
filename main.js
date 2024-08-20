@@ -8,7 +8,7 @@ const multer = require('multer');
 const { title } = require('process');
 const app = express();
 
-const port = 8080;
+const port =5000;
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
@@ -137,11 +137,19 @@ app.post('/signup', (req, res) => {
     }
 });
 // eldakrory_---------------------
+
 app.get('/profile', (req, res) => {
     const userEmail = req.session.userEmail;
 
     if (userEmail) {
-        const query = 'SELECT * FROM students WHERE email = ?';
+        const query = `
+            SELECT s.std_name, s.email, s.profile_picture, c.courseName
+            FROM students AS s
+            LEFT JOIN courses_std AS cs ON s.email = cs.std_email
+            LEFT JOIN courses AS c ON cs.course_id = c.course_id
+            WHERE s.email = ?
+        `;
+
         connection.query(query, [userEmail], (err, results) => {
             if (err) {
                 console.error('Error executing query:', err);
@@ -149,17 +157,28 @@ app.get('/profile', (req, res) => {
                 return;
             }
 
-            if (results.length > 0) {
-                const user = results[0];
-                res.render('profile', { user });
-            } else {
-                res.redirect('/login');
+ 
+            if (results.length === 0) {
+                return res.redirect('/login');
             }
+
+     
+            const user = {
+                std_name: results[0].std_name || 'Unknown',
+                email: results[0].email || 'N/A',
+                profile_picture: results[0].profile_picture || 'default.png',
+                courses: results.map(row => ({ name: row.courseName })).filter(course => course.name)
+            };
+
+          
+            res.render('profile', { user });
         });
     } else {
         res.redirect('/login');
     }
 });
+
+
 
 app.post('/upload-profile-picture', upload.single('profile_picture'), (req, res) => {
     const userEmail = req.session.userEmail;
@@ -255,6 +274,7 @@ app.get('/courses', (req, res) => {
 });
 
 
+
 app.get('/profile/update', (req, res) => {
     // const userEmail = req.user.email; // 
     const userEmail = req.session.userEmail;
@@ -263,9 +283,8 @@ app.get('/profile/update', (req, res) => {
         return res.status(401).json({ message: 'Unauthorized' });
     }
 
-   
     const query = `
-        SELECT std_name, email,  courseName
+        SELECT std_name, email, profile_picture, courseName
         FROM students AS s
         LEFT JOIN courses_std AS cs ON email = cs.std_email
         LEFT JOIN courses AS c ON cs.course_id = c.course_id
@@ -278,16 +297,18 @@ app.get('/profile/update', (req, res) => {
             return res.status(500).json({ message: 'Server error' });
         }
 
-       
         const user = {
             std_name: results[0]?.std_name || 'Unknown',
             email: results[0]?.email || 'N/A',
-            joined: results[0]?.joined || 'Unknown',
             profile_picture: results[0]?.profile_picture || 'default.png',
             courses: results.map(row => ({ name: row.courseName })).filter(course => course.name) 
         };
 
-        res.render('profile', { user });
+        // Save user data in the session or elsewhere if needed
+        req.session.user = user;
+
+        // Redirect to the profile page
+        res.redirect('/profile');
     });
 });
 
