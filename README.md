@@ -65,8 +65,8 @@ Database Management: ![Ebrahim Ayman](https://github.com/HemaX10)  - Implemented
 📷 Screenshots
 Here are some screenshots from the platform:
 
-Home Page
-<img src="image/home.png" alt="Home Page Image" width="70%" />
+Home Page <br/>
+<img src="image/home.png" alt="Home Page Image" width="70%" /> <br/>
 
 User Authentication
 <img src="image/signup.png" alt="Sign Up Page Image" width="70%" />
