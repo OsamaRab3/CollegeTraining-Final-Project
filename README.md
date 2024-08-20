@@ -57,15 +57,16 @@ The **Online Learning Platform** is designed to provide a seamless and engaging 
 
 
 👥 Team Contributions
-Backend Development: [Your Name] - Developed the server-side using Node.js and Express, ensuring efficient and secure application functionality.
-Frontend Development: Ahmed Gamal - Designed a responsive and engaging user interface, prioritizing ease of use and accessibility.
-Database Management: Ebrahim Ayman - Implemented a robust MySQL data structure, ensuring data integrity and optimized performance.
+Backend Development: ![Osama Rabea](https://github.com/OsamaRab3) - Developed the server-side using Node.js and Express, ensuring efficient and secure application functionality.
+Frontend Development: ![Ahmed Gamal](https://github.com/Ahmed-Gamal-0) - Designed a responsive and engaging user interface, prioritizing ease of use and accessibility.
+Database Management: ![Ebrahim Ayman](https://github.com/HemaX10)  - Implemented a robust MySQL data structure, ensuring data integrity and optimized performance.
 
 
 📷 Screenshots
 Here are some screenshots from the platform:
 
 Home Page
+<img src="image/home.png" alt="Description" width="50%" />
 ![home](image/home.png)
 
 User Authentication
