@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Detail </title>
+    <title>Course Detail</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon"  sizes="32x32"
-    href="../assets/imgs/icon.png">
-    
+    <link rel="icon" sizes="32x32" href="../assets/imgs/icon.png">
 </head>
 <body>
     <header>
@@ -21,7 +19,8 @@
         </nav>
     </header>
     <main>
-        <section id="course-detail">
+        
+        <section id="course_1">
             <h1>Introduction to Web Development</h1>
             <img src="../assets/course1.jpg" alt="Course 1">
             <p> Learn the fundamentals of web development with HTML, CSS, and JavaScript. This course is designed for beginners and covers all the basics of creating modern, responsive websites.</p>
@@ -32,14 +31,41 @@
                 <li>JavaScript basics and DOM manipulation</li>
                 <li>Project-based learning with real-world examples</li>
             </ul>
-            <a href="../views/signup.ejs" class="cta-button">Enroll Now</a>
+            <button type="button" class="enroll-button" data-course-id="1">Enroll</button>
+        </section>
+
+        <section id="course_2">
+            <h1>Data Science with Python</h1>
+            <img src="../assets/course2.jpg" alt="Course 2">
+            <p> Learn how to analyze data, visualize results, and make data-driven decisions using Python. This course covers the fundamentals of data science and Python programming.</p>
+            <h2>Course Highlights</h2>
+            <ul>
+                <li>Data Analysis with Pandas</li>
+                <li>Data Visualization with Matplotlib and Seaborn</li>
+                <li>Machine Learning Basics</li>
+                <li>Real-world Data Science Projects</li>
+            </ul>
+            <button type="button" class="enroll-button" data-course-id="2">Enroll</button>
+        </section>
+
+        <section id="course_3">
+            <h1>Digital Marketing Essentials</h1>
+            <img src="../assets/course3.jpg" alt="Course 3">
+            <p> Learn the core concepts of digital marketing, including SEO, social media marketing, and content strategy. This course is designed for beginners looking to get started in digital marketing.</p>
+            <h2>Course Highlights</h2>
+            <ul>
+                <li>Introduction to SEO</li>
+                <li>Social Media Marketing Strategies</li>
+                <li>Content Marketing Essentials</li>
+                <li>Building a Digital Marketing Plan</li>
+            </ul>
+            <button type="button" class="enroll-button" data-course-id="3">Enroll</button>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Online Learning Platform. All rights reserved.</p>
     </footer>
+
     <script src="../js/main.js"></script>
-
-
 </body>
 </html>
