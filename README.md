@@ -66,7 +66,7 @@ Database Management: ![Ebrahim Ayman](https://github.com/HemaX10)  - Implemented
 Here are some screenshots from the platform:
 
 Home Page
-<img src="image/home.png" alt="Home Page Image" width="300" />
+<img src="image/home.png" alt="Home Page Image" width="500" />
 ![home](image/home.png)
 
 User Authentication
