@@ -56,12 +56,15 @@ The **Online Learning Platform** is designed to provide a seamless and engaging 
    Open your web browser and navigate to http://localhost:3000.
 
 
+<br/>
+<br/>
 👥 Team Contributions
 Backend Development: ![Osama Rabea](https://github.com/OsamaRab3) - Developed the server-side using Node.js and Express, ensuring efficient and secure application functionality.
 Frontend Development: ![Ahmed Gamal](https://github.com/Ahmed-Gamal-0) - Designed a responsive and engaging user interface, prioritizing ease of use and accessibility.
 Database Management: ![Ebrahim Ayman](https://github.com/HemaX10)  - Implemented a robust MySQL data structure, ensuring data integrity and optimized performance.
 
-
+<br/>
+<br/>
 📷 Screenshots
 Here are some screenshots from the platform:
 
