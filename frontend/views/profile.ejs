@@ -1,55 +1,11 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" sizes="32x32" href="../assets/imgs/icon.png">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="../public/index.html">Home</a>
-            <a href="../public/courses.html">Courses</a>
-            <a href="../public/profile.ejs">Profile</a>
-            <a href="../public/login.html">Login</a>
-            <a href="../public/signup.html">Sign Up</a>
-            <a href="../public/message-page.html">Message Us</a>
-        </nav>
-    </header>
-    <main>
-        <section id="profile">
-            <h1>Profile</h1>
-            <div class="profile-info">
-                <% if (user.profile_picture && user.profile_picture !== 'defult.png') { %>
-                    <img src="/assets/<%= user.profile_picture %>" alt="User Profile Picture" style="max-width: 200px; max-height: 200px;">
-                <% } else { %>
-                    <img src="/assets/defult.png" alt="Default User Profile Picture" style="max-width: 200px; max-height: 200px;">
-                <% } %>
-                
-                
-                <h2><%= user.name %></h2>
-                <p>Email: <%= user.email %></p>
-                <p>Joined: <%= user.joined %></p>
-                <a href="../public/courses.html" class="btn">My Courses</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Online Learning Platform. All rights reserved.</p>
-    </footer>
-    <script src="../js/main.js"></script>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="/css/styles.css"> 
-    <link rel="icon" sizes="32x32" href="/assets/imgs/icon.png"> 
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" sizes="32x32" href="/assets/imgs/icon.png">
 </head>
 <body>
     <header>
@@ -67,21 +23,31 @@
             <h1>Profile</h1>
             <div class="profile-info">
                 <% if (user.profile_picture && user.profile_picture !== 'default.png') { %>
-                    <img src="/assets/<%= user.profile_picture %>" alt="User Profile Picture" style="max-width: 200px; max-height: 200px;">
+                    <img src="/assets/<%= user.profile_picture %>" alt="User Profile Picture" 
+                        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                 <% } else { %>
-                    <img src="/assets/default.png" alt="Default User Profile Picture" style="max-width: 200px; max-height: 200px;">
+                    <img src="/assets/default.png" alt="Default User Profile Picture" 
+                        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
                 <% } %>
-                
                 <h2><%= user.std_name %></h2> 
                 <p>Email: <%= user.email %></p>
-                <p>Joined: <%= user.joined %></p>
                 <a href="/courses" class="btn">My Courses</a> 
             </div>
+            <p>My Courses</p>
+            <ul id="course-list">
+                <% if (user.courses && user.courses.length > 0) { %>
+                    <% user.courses.forEach(course => { %>
+                        <li><%= course.name %></li>
+                    <% }) %>
+                <% } else { %>
+                    <li>No courses found</li>
+                <% } %>
+            </ul>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Online Learning Platform. All rights reserved.</p>
     </footer>
-    <script src="/js/main.js"></script> 
+    <script src="/js/main.js"></script>
 </body>
 </html>
