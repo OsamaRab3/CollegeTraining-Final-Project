@@ -67,20 +67,19 @@ Here are some screenshots from the platform:
 
 Home Page
 <img src="image/home.png" alt="Home Page Image" width="70%" />
-![home](image/home.png)
 
 User Authentication
-![signup](image/signup.png)
-![login](image/login.png)
+<img src="image/signup.png" alt="Sign Up Page Image" width="70%" />
+<img src="image/login.png" alt="Login Page Image" width="70%" />
 
 User Profiles
-![profile](image/profile.png)
+<img src="image/profile.png" alt="Profile Page Image" width="70%" />
 
 Course Catalog
-![course](image/course.png)
+<img src="image/course.png" alt="Profile Page Image" width="70%" />
 
 Support Channel
-![message](image/message.png)
+<img src="image/message.png" alt="Message Page Image" width="70%" />
 
 
 🔗 Links
