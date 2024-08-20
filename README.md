@@ -1,8 +1,6 @@
 # CollegeTraining-Final-Project
+#🌟 Online Learning Platform
 
-##  Online-learning-platform 
-
-🌟 Online Learning Platform
 Welcome to the Online Learning Platform project repository. This project was developed as part of our final college training project, aiming to create a modern, user-friendly online learning environment.
 
 🚀 Project Overview
