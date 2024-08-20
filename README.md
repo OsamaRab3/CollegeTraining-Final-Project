@@ -86,6 +86,7 @@ Support Channel  <br/>
 Project Repository: ![Project Repository Link](gh repo clone OsamaRab3/CollegeTraining-Final-Project)
 
 
+<br/>
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
