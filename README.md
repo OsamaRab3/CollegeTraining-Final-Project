@@ -65,6 +65,7 @@ Database Management: ![Ebrahim Ayman](https://github.com/HemaX10)  - Implemented
 
 <br/>
 <br/>
+<br/>
 📷 Screenshots
 Here are some screenshots from the platform:
 
