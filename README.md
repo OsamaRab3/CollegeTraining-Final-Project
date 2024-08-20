@@ -41,7 +41,7 @@ The **Online Learning Platform** is designed to provide a seamless and engaging 
    gh repo clone OsamaRab3/CollegeTraining-Final-Project
 2. Navigate to the Project Directory:
    ```bash
-   cd online-learning-platform
+   cd CollegeTraining-Final-Project
 3. Install Dependencies:
    ```bash
    npm install
