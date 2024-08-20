@@ -87,8 +87,11 @@ Support Channel  <br/>
 
 <br/>
 🔗 Links
-Project Repository: ![Project Repository Link](gh repo clone OsamaRab3/CollegeTraining-Final-Project)
+Project Repository: ![Project Repository Link](https://github.com/OsamaRab3/CollegeTraining-Final-Project)
 
+<br/>
+<br/>
+<br/>
 
 <br/>
 📄 License
