@@ -81,9 +81,9 @@ Course Catalog  <br/>
 Support Channel  <br/>
 <img src="image/message.png" alt="Message Page Image" width="70%" />  <br/>
 
-
+<br/>
 🔗 Links
-Project Repository: gh repo clone OsamaRab3/CollegeTraining-Final-Project
+Project Repository: ![Project Repository Link](gh repo clone OsamaRab3/CollegeTraining-Final-Project)
 
 
 📄 License
